@@ -17,6 +17,7 @@ public class FP03FunctionalInterfaces {
 		Function<Integer,Integer> square = x -> x*x;//ip -> op same type or different
 		Consumer<Integer> sysout = System.out::println;//takes an input but dosen't return anything 
 		BinaryOperator <Integer> sum = (x,y) -> x+y;//ip and op of same type
+		//supplier = no input but return something
 		
 		
 		numbers.stream().filter(isEven)
